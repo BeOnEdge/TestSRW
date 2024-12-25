@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестирование</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: linear-gradient(120grad, #19427e, #5688B2);
+        /* background-color: #19427e; */
+        height: 100vh;
+      }
+      body img {
+        position: absolute;
+        z-index: 0;
+        top: 10px;
+        left: 10px;
+        max-width: 300px;
+      }
+      .block-test {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        width: 70%;
+        height: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 34px 5px rgba(34, 60, 80, 0.2);
+      }
+      .title {
+      }
+      .task {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .task input {
+        border-radius: 5px;
+        max-width: 60%;
+        border: 1px solid #5688B2;
+        font-size: 14px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 10px;
+      }
+      .task button {
+        border-radius: 5px;
+        padding: 5px;
+        max-width: fit-content;
+        border: 1px solid #5688B2;
+        background-color: aliceblue;
+      }
+      .hidden {
+        display: none;
+      }
+      .result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="block-test">
+      <h1 class="title">Тестирование</h1>
+      <div id="task-container"></div>
+      <div class="result hidden" id="result"></div>
+    </section>
+    <img src="https://uni.ivanovo.ac.ru/media/imgs/logo_100.png" alt="" />
+  </body>
+</html>
+
